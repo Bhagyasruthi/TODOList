@@ -3,7 +3,7 @@ const input = document.querySelector('input');
 
 		btn.addEventListener('click', addList);
 		input.addEventListener('keyup', (e)=>{
-		      addList(e) = null;
+		     (e.keyCode === 13 ? addList(e) : null);
 		})
 
 		function addList(e){
